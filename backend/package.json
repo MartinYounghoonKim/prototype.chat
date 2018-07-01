@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "pm2-dev index.js"
   },
   "author": "martin <martin@within.co.kr>",
   "license": "ISC",
@@ -13,6 +13,7 @@
     "engine.io": "~3.2.0",
     "express": "^4.16.3",
     "has-binary2": "~1.0.2",
+    "pm2": "^2.10.4",
     "socket.io": "^2.1.1",
     "socket.io-adapter": "~1.1.0",
     "socket.io-client": "2.1.1",

@@ -6,6 +6,7 @@ var server = require('http').createServer(app);
 var io = require('socket.io')(server);
 var port = process.env.PORT || 3000;
 
+const redis = require('./database/redis');
 server.listen(port, () => {
     console.log('Server listening at port %d', port);
 });
@@ -32,6 +33,7 @@ io.on('connection', (socket) => {
     // when the client emits 'add user', this listens and executes
     socket.on('add user', (username) => {
         if (addedUser) return;
+        redis.set('user', username);
 
         // we store the username in the socket session for this client
         socket.username = username;
