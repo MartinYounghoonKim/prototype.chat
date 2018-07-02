@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "pm2-dev index.js"
+    "start": "pm2-dev index.js",
+    "test": "pm2-dev index.js --exec babel-node"
   },
   "author": "martin <martin@within.co.kr>",
   "license": "ISC",
@@ -17,6 +18,7 @@
     "socket.io": "^2.1.1",
     "socket.io-adapter": "~1.1.0",
     "socket.io-client": "2.1.1",
-    "socket.io-parser": "~3.2.0"
+    "socket.io-parser": "~3.2.0",
+    "socket.io-redis": "^5.2.0"
   }
 }
