@@ -42,21 +42,26 @@
         flex-flow: row wrap;
         margin-bottom: 20px;
     }
-    h1, h2 {
-        font-weight: normal;
-    }
 
-    ul {
-        list-style-type: none;
+    .signin-wrapper form {
+        width: 100%;
+        text-align: center;
+        border: none;
+    }
+    .signin-wrapper form fieldset {
+        margin: 0;
         padding: 0;
+        border: 0;
     }
 
-    li {
-        display: inline-block;
-        margin: 0 10px;
-    }
-
-    a {
-        color: #42b983;
+    .signin-wrapper form input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #000;
+        outline: none;
+        padding-bottom: 15px;
+        text-align: center;
+        width: 400px;
+        font-size: 20px;
     }
 </style>
